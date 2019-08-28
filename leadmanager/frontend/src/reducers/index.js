@@ -10,3 +10,5 @@ export default combineReducers({
   messages,
   auth
 });
+
+//리듀서에서 사용가능한 값들 추가

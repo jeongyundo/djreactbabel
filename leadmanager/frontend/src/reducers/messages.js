@@ -10,3 +10,5 @@ export default function(state = initialState, action) {
       return state;
   }
 }
+
+//create_message를 이용하면 특정 값을 입력시키는 함수를 만듬

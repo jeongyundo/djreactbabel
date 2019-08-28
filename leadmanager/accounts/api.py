@@ -38,3 +38,4 @@ class UserAPI(generics.RetrieveAPIView):
 
   def get_object(self):
     return self.request.user
+#로그인시 제공해준 토큰값을 넣어서 특정 user의 정보를 확인할 수 있다.

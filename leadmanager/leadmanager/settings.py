@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'frontend',
     'knox',
+    #이를 이용해 유저값을 저장
     'accounts',
+    #user정보를 위한 accounts 이름의 APP을 생성할 것.
 ]
 
 REST_FRAMEWORK = {
