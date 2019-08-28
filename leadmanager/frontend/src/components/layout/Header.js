@@ -9,7 +9,7 @@ export class Header extends Component {
     auth: PropTypes.object.isRequired,
     logout: PropTypes.func.isRequired
   };
-
+  //action에서 logout함수를 가져온다. 그리고 logout을 누를시에 logout이 실행된다.
   render() {
     const { isAuthenticated, user } = this.props.auth;
 
@@ -64,6 +64,7 @@ export class Header extends Component {
             </a>
           </div>
           {isAuthenticated ? authLinks : guestLinks}
+          {/*isAuthenticated를 확인해서 authLinks 혹은 guestLinks를 맞춰서 내보냄*/}
         </div>
       </nav>
     );

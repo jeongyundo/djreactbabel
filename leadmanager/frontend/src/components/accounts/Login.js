@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { login } from "../../actions/auth";
 
+//register.js 와 비슷하다.
+
 export class Login extends Component {
   state = {
     username: "",

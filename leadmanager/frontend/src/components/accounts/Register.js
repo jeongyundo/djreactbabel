@@ -11,6 +11,7 @@ export class Register extends Component {
     email: "",
     password: "",
     password2: ""
+    //확인을 위한 password 기입
   };
 
   static propTypes = {
@@ -23,6 +24,7 @@ export class Register extends Component {
     const { username, email, password, password2 } = this.state;
     if (password !== password2) {
       this.props.createMessage({ passwordNotMatch: "Passwords do not match" });
+      //비밀번호 확인과정
     } else {
       const newUser = {
         username,

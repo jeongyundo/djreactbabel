@@ -120,6 +120,7 @@ export const tokenConfig = getState => {
   if (token) {
     config.headers["Authorization"] = `Token ${token}`;
   }
+  //토큰 값이 있다면 config값에 토큰을 추가해준다.
 
   return config;
 };

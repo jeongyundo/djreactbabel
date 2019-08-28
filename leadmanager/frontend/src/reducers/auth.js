@@ -9,8 +9,10 @@ import {
   REGISTER_FAIL
 } from "../actions/types";
 
+//초기상태를 지정해줌.
 const initialState = {
   token: localStorage.getItem("token"),
+  //localStorage에 저장되어 있음.
   isAuthenticated: null,
   isLoading: false,
   user: null
