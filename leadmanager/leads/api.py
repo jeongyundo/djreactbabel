@@ -2,12 +2,14 @@ from leads.models import Lead
 from rest_framework import viewsets, permissions
 from .serializers import LeadSerializer
 
+
 # Lead Viewset
 
 
 class LeadViewSet(viewsets.ModelViewSet):
     permission_classes = [
-        permissions.IsAuthenticated,
+        #permissions.IsAuthenticated,
+        permissions.AllowAny,
     ]
     #이를 통해 권한 있는 사람만 사용 가능
 
@@ -19,4 +21,4 @@ class LeadViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
-    #
+    
